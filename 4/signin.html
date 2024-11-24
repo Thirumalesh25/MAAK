@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Sign In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: lightgrey;
+            width: 300px;
+            border: 1px solid black;
+            padding: 30px;
+            margin: 20px auto;
+        }
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .center {
+            text-align: center;
+        }
+        .center a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <p><img src="am.png" width="400" height="200" alt="Amazon Logo"></p>
+    </center>
+    <div class="container">
+        <h1>Sign In</h1>
+        <form action="home.html" method="GET">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="center">
+                <input type="submit" value="Login">
+            </div>
+            <p class="center">
+                By continuing, you agree to Amazon's <br>
+                <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.
+            </p>
+            <p class="center">
+                <a href="signup.html">New to Amazon? Create an account</a>
+            </p>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            background-color: grey;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: left;
+        }
+        label, input, select, textarea {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="radio"] {
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <center><img src="gp.png" alt="Registration Image"></center>
+        <p style="color: blue; text-align: center;">Welcome to the GPREC Registration Page. Please fill in the details below to register.</p>
+        <form>
+            <label>Firstname:</label><input type="text" name="firstname">
+            <label>Middlename:</label><input type="text" name="middlename">
+            <label>Lastname:</label><input type="text" name="lastname">
+            <label>Date of Birth:</label><input type="text" name="dob">
+            <label>Course:</label>
+            <select>
+                <option>Course</option>
+                <option>BCA</option><option>BBA</option><option>B.Tech</option>
+                <option>MBA</option><option>MCA</option><option>M.Tech</option>
+            </select>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+            <label>Phone:</label><input type="text" name="phone">
+            <label>Address:</label><textarea rows="2"></textarea>
+            <label>Email:</label><input type="email" name="email">
+            <label>Password:</label><input type="password" name="pass">
+            <label>Re-type Password:</label><input type="password" name="repass">
+            <input type="button" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

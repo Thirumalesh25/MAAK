@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <title>gsk</title>
+    <style>
+        div {
+            background-color: lightgrey;
+            width: 300px;
+            border: 1px solid black;
+            padding: 50px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <p><img src="am.png" width="400" height="200" alt="Amazon Logo"></p>
+        <h3>Create Account</h3>
+    </center>
+    <div>
+        <form action="home.html" method="GET">
+            <p align="left">
+                <label for="fname">Your Name:</label>
+                <input type="text" id="fname" name="fname" required><br><br>
+                
+                <label for="ph">Phone:</label>
+                <input type="text" name="countryCode" value="+91" size="3" readonly>
+                <input type="text" id="ph" name="ph" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd" required><br><br>
+            </p>
+            <p align="center">
+                We will send you a verification email.<br><br>
+                <input type="submit" value="Continue">
+            </p>
+        </form>
+        <h4>Already have an account? <a href="signin.html">Sign in</a></h4>
+    </div>
+</body>
+</html>
